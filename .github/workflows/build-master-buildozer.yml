@@ -1,6 +1,9 @@
 name: Build (with Buildozer master)
 on:
   push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
     branches-ignore:
       - data
       - gh-pages
