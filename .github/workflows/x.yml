@@ -33,7 +33,8 @@ jobs:
 
       - name: Install OpenJDK
         run: sudo apt-get update && sudo apt-get install openjdk-8-jdk
-
+      -name: install cython
+        run: pip install --upgrade Cython
       - name: Set up Android SDK
         run: |
           mkdir -p $HOME/android-sdk/cmdline-tools
