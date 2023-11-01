@@ -8,11 +8,10 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 
 version = 0.1
-requirements = python3,kivy
-
+requirements = android,app,python3,kivy,pyjnius,androidsdk=34,buildozer
 orientation = portrait
 fullscreen = 0
-android.arch = armeabi-v7a
+android.archs = armeabi-v7a
 
 # iOS specific
 ios.kivy_ios_url = https://github.com/kivy/kivy-ios
