@@ -1,10 +1,6 @@
 name: Build
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
     branches-ignore:
       - data
       - gh-pages
@@ -14,9 +10,7 @@ on:
     branches-ignore:
       - data
       - gh-pages
-  schedule:
-      - cron: 0 0 */4 * * # at 00:00 UTC every fourth day
-  workflow_dispatch:
+
 jobs:
   # Build job. Builds app for Android with Buildozer
   build-android:
