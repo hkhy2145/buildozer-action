@@ -12,7 +12,7 @@ requirements = android,app,python3,kivy,pyjnius,androidsdk=34,buildozer
 orientation = portrait
 fullscreen = 0
 android.archs = armeabi-v7a
-
+android.accept_sdk_license = True
 # iOS specific
 ios.kivy_ios_url = https://github.com/kivy/kivy-ios
 ios.kivy_ios_branch = master
